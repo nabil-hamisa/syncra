@@ -1,0 +1,8 @@
+[package]
+name = "nvdec-sys"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+libloading = "0.9"

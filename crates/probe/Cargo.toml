@@ -1,0 +1,13 @@
+[package]
+name = "probe"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+proto.workspace = true
+net.workspace = true

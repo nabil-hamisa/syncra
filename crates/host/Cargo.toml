@@ -1,0 +1,18 @@
+[package]
+name = "host"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+windows.workspace = true
+nvenc-sys.workspace = true
+proto.workspace = true
+net.workspace = true
+audio.workspace = true
+ui.workspace = true
+vigem-client = { version = "0.1.4", features = ["unstable_xtarget_notification"] }

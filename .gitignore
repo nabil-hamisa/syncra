@@ -1,0 +1,8 @@
+/target
+*.h264
+*.hevc
+*.log
+
+# Local AI tooling config
+/.claude/
+/CLAUDE.md

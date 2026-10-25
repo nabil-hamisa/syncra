@@ -1,0 +1,10 @@
+[package]
+name = "ui"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+windows.workspace = true
+tracing-subscriber.workspace = true

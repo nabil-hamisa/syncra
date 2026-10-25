@@ -1,0 +1,23 @@
+# Signal server: UDP rendezvous + relay on port 7000.
+#
+# Publish the port directly; do NOT route it through a reverse proxy. The
+# server must see each peer's real public IP:port (it hands those to the
+# other side for hole punching, and relays to them). Docker's port
+# publishing keeps the source address.
+#
+#   docker compose up -d --build
+#   docker compose logs -f
+services:
+  signal:
+    build: .
+    image: syncra-signal:latest
+    container_name: syncra-signal
+    restart: unless-stopped
+    ports:
+      - "7000:7000/udp"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }

@@ -1,0 +1,18 @@
+[package]
+name = "app"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "syncra"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+tracing.workspace = true
+windows.workspace = true
+net.workspace = true
+ui.workspace = true
+host = { path = "../host" }
+client = { path = "../client" }

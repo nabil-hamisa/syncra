@@ -1,0 +1,14 @@
+[package]
+name = "bench"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+windows.workspace = true
+proto.workspace = true
+net.workspace = true
